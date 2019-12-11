@@ -4,6 +4,9 @@
 /** 1. printIndices */
 function printIndices(items) {
 	// Replace this with your code
+  for (const i in items) {
+    console.log(items[i], i);
+  }
 }
 
 
@@ -17,3 +20,5 @@ function everyOtherItem(items) {
 function smallestNItems(items, n) {
 	// Replace this with your code
 }
+
+
