@@ -19,13 +19,17 @@ function everyOtherItem(items) {
       result.push(items[i]);
     }
   }
-  console.log(result)
+  console.log(result);
 }
 
 
 /** 3. smallestNItems */
 function smallestNItems(items, n) {
 	// Replace this with your code
+  let sortedItems = items.sort((a, b) => a - b);
+  let sortedNItems = sortedItems.slice(0, n);
+  sortedNItems.reverse();
+  console.log(sortedNItems);
 }
 
 
